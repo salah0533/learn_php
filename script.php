@@ -1,3 +1,8 @@
+<?php 
+    $user = 'ali';
+    $age  = 30;
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +13,7 @@
 </head>
 <body>
     <?php 
-        echo "<h1 class=\"style\">from php</h1>";
+        echo "<h1 class=\"style\">user ".$user." age:$age</h1>";
     ?>
     <h1><?php echo 'from php' ?></h1>
 </body>
