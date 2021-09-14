@@ -10,13 +10,22 @@
     }
     $so = new sol();
     define("BROSER","chrome",FALSE);
-    $i=50;
-    $i*=220;
-    $i.=' $';
-    echo $i;
-    
-    //(.) to concatinat strign the return val is string ;
-    //(+) is just for number;
+    /*
+    //error control
+    //for security resen you should disable error 
+    // (@) egnore error
+    $file = @fopen("ali.txt","r");
+    //castimaze error message
+    $file = @fopen("ali.txt","r") or die("this file not found");//if file is found so fine if not will show you this file not found
+    */
+    // this error include("inc.php");
+    (@include("inc.php")) or die("this file not found");
+    //control erro connection with database
+    $user= 'ahmed';
+    $pass= 'pass';
+    $localhost='127.0.0.1';
+    $db="clint";
+    (@mysqli_connect($localhost,$user,$pass,$db)) or die("connection lose");
 ?>
 <!DOCTYPE html>
 <html lang="en">
