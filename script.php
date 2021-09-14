@@ -26,6 +26,12 @@
     $localhost='127.0.0.1';
     $db="clint";
     (@mysqli_connect($localhost,$user,$pass,$db)) or die("connection lose");
+    $x = expr1 ? expr2 : expr3;
+    $x = expr1 ?? expr2;
+    //??	Null coalescing		Returns the value of $x.
+    //The value of $x is expr1 if expr1 exists, and is not NULL.
+    //If expr1 does not exist, or is NULL, the value of $x is expr2.
+    //Introduced in PHP 7
 ?>
 <!DOCTYPE html>
 <html lang="en">
