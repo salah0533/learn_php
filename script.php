@@ -5,9 +5,11 @@
     $arr= array(1=>4);
     class sol{
         function s(){
-            echo "<br>" . 1;
+            echo "hello";
         }
     }
+    $so = new sol();
+    define("name","ali",FALSE);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,9 +23,6 @@
     <?php 
         echo "<h1 class=\"style\">user ".gettype($user)." age:" . gettype($age) . "</h1>";
     ?>
-    <h1><?php echo 'arr :  ' ?></h1>
-    <?php echo  var_dump($arr);
-    $ob=new sol();
-    $ob->s() ?>
+    
 </body>
 </html>
