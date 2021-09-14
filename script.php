@@ -9,8 +9,11 @@
         }
     }
     $so = new sol();
-    define("name_var",valau,case_insensitive);
-    define("name","ali",FALSE);
+    define("BROSER","chrome",FALSE);
+    $i=0;
+    $j=0;
+    //(.) to concatinat strign the return val is string ;
+    //(+) is just for number;
 ?>
 <!DOCTYPE html>
 <html lang="en">
