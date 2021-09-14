@@ -10,8 +10,11 @@
     }
     $so = new sol();
     define("BROSER","chrome",FALSE);
-    $i=0;
-    $j=0;
+    $i=50;
+    $i*=220;
+    $i.=' $';
+    echo $i;
+    
     //(.) to concatinat strign the return val is string ;
     //(+) is just for number;
 ?>
