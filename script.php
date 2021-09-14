@@ -9,6 +9,7 @@
         }
     }
     $so = new sol();
+    define("name_var",valau,case_insensitive);
     define("name","ali",FALSE);
 ?>
 <!DOCTYPE html>
