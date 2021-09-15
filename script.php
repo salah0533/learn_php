@@ -10,28 +10,18 @@
     }
     $so = new sol();
     define("BROSER","chrome",FALSE);
-    /*
-    //error control
-    //for security resen you should disable error 
-    // (@) egnore error
-    $file = @fopen("ali.txt","r");
-    //castimaze error message
-    $file = @fopen("ali.txt","r") or die("this file not found");//if file is found so fine if not will show you this file not found
-    */
-    // this error include("inc.php");
-    (@include("inc.php")) or die("this file not found");
-    //control erro connection with database
-    $user= 'ahmed';
-    $pass= 'pass';
-    $localhost='127.0.0.1';
-    $db="clint";
-    (@mysqli_connect($localhost,$user,$pass,$db)) or die("connection lose");
-    $x = expr1 ? expr2 : expr3;
-    $x = expr1 ?? expr2;
-    //??	Null coalescing		Returns the value of $x.
-    //The value of $x is expr1 if expr1 exists, and is not NULL.
-    //If expr1 does not exist, or is NULL, the value of $x is expr2.
-    //Introduced in PHP 7
+    //loop
+    //[ foreach( array as valeu ){}]
+    //[ foreach( array as key=>value )]
+    /*[while() 
+        endwhile]
+    endwhile */    
+    //[for(){}]
+    //[do{}while()]
+    $arr=array(1=>2,3=>4);
+    foreach($arr as $key => $val){
+        echo $key."=>".$val;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
