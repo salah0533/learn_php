@@ -10,17 +10,10 @@
     }
     $so = new sol();
     define("BROSER","chrome",FALSE);
-    //loop
-    //[ foreach( array as valeu ){}]
-    //[ foreach( array as key=>value )]
-    /*[while() 
-        endwhile]
-    endwhile */    
-    //[for(){}]
-    //[do{}while()]
-    $arr=array(1=>2,3=>4);
-    foreach($arr as $key => $val){
-        echo $key."=>".$val;
+    //function() return null if not return anythink
+    //function($arg=default_val)$arg take default if not exist pass arg
+    function f(){
+        
     }
 ?>
 <!DOCTYPE html>
