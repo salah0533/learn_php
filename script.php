@@ -1,8 +1,5 @@
 <?php 
-    //switch
-    switch() {
-        //case............
-    }
+    //file system on php site
 ?>
 <!DOCTYPE html>
 <html lang="en">
