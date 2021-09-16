@@ -28,6 +28,18 @@
     //print complet arry
     print_r($arr2)
     //acces arry inside array use arr[][]
+    //associatyive array is (dectionary)
+    //key ->value
+    //multidimensional array
+    /*
+    arry(
+        array(),
+        array()
+    )
+    */
+    //add new element to array
+    // arr[]=new_element ;
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
