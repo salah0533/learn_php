@@ -1,5 +1,13 @@
 <?php 
-    //file system on php site
+    //global var 
+    $name= 'ali';
+
+
+    function add(){
+        $name = 'ahmed';
+        echo 'local name' . $name;
+        echo 'global name ' . $GLOBALS['name'];
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +19,7 @@
 </head>
 <body>
     <?php
-    
+        add();
     ?>
     
 </body>
