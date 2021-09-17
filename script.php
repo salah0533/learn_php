@@ -1,10 +1,8 @@
 <?php 
-    //$_SERVER["PHP_SELF"];
-    //$_SERVER["SERVER_ADDR"];
-    //$_SERVER["SERVER_NAME"];
-    //$_SERVER["QUERY_STRING"];
-    //$_SERVER["HTTP_REFERER"];
-    $var_ = $_SERVER["QUERY_STRING"];
+    // Get
+    $user_name = $_GET['username'];
+    $password  = $_GET['password'];
+
 
 ?>    
 <!DOCTYPE html>
@@ -17,9 +15,7 @@
 </head>
 <body>
     <?php
-        echo $var_;
-        
-        
+        echo "your user_name is : " . $user_name . " and your password is ". $password ;
     ?>
     
 </body>

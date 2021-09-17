@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="script.php">click</a>
+    <form action="script.php" method='GET'>
+        <input type="text" name='username'>
+        <input type="password" name='password'>
+        <input type="submit" value='login'>
+    </form>
 </body>
 </html>
