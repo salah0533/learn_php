@@ -1,14 +1,12 @@
 <?php 
-    //global var 
-    $name= 'ali';
+    //$_SERVER["PHP_SELF"];
+    //$_SERVER["SERVER_ADDR"];
+    //$_SERVER["SERVER_NAME"];
+    //$_SERVER["QUERY_STRING"];
+    //$_SERVER["HTTP_REFERER"];
+    $var_ = $_SERVER["QUERY_STRING"];
 
-
-    function add(){
-        $name = 'ahmed';
-        echo 'local name' . $name;
-        echo 'global name ' . $GLOBALS['name'];
-    }
-?>
+?>    
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +17,9 @@
 </head>
 <body>
     <?php
-        add();
+        echo $var_;
+        
+        
     ?>
     
 </body>
