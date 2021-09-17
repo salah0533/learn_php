@@ -1,7 +1,7 @@
 <?php 
-    // Get
-    $user_name = $_GET['username'];
-    $password  = $_GET['password'];
+    // POST
+    $user_name = $_POST['username'];
+    $password  = $_POST['password'];
 
 
 ?>    
@@ -15,7 +15,17 @@
 </head>
 <body>
     <?php
-        echo "your user_name is : " . $user_name . " and your password is ". $password ;
+        if(  $_SERVER['REQUEST_METHOD'] == "POST")
+        {
+            echo "the data is send it with " . $_SERVER['REQUEST_METHOD'] . " request <br>" ;
+            echo "your user_name is : " . $user_name . " and your password is ". $password ;
+        }else{
+            echo 'you can\'t browse this page directly';
+            usleep(1000);
+            header("location:http://localhost/learn%20php/file1.php");
+            die();
+        }
+
     ?>
     
 </body>
